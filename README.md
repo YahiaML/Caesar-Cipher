@@ -1,19 +1,15 @@
 # Caesar-Cipher
-This is an enhanced version of the HackerRank python practice named "Caesar Cipher"
+The Caesar_Cipher function is a Python implementation of the Caesar cipher algorithm. The function first prompts the user to choose a language from a dictionary of languages or to add a new language. The user is then prompted to enter a sentence to be ciphered and a shift value to be used in the ciphering process. The function then applies the Caesar cipher algorithm to the sentence and returns the ciphered sentence.
 
-Julius Caesar protected his confidential information by encrypting it using a cipher. Caesar's cipher shifts each letter by a number of letters. If the shift takes you past the end of the alphabet, just rotate back to the front of the alphabet. In the case of a rotation by 3, w, x, y, and z would map to z, a, b and c.
+The Caesar cipher is a type of substitution cipher that replaces each letter in the plaintext by a letter some fixed number of positions down the alphabet. For example, with a shift of 3, A would be replaced by D, B would become E, and so on.
 
-But as this method of ciphering can be easily broken, I've added a feature named "add another language" where you can:
+The implementation of the Caesar_Cipher function makes use of a dictionary of languages, where each language is associated with a list of letters in that language. The function also includes a nested function called "get_choice", which prompts the user to choose a language and handles the input validation. If the user chooses a language that is already in the dictionary, the function uses the corresponding list of letters for the chosen language. If the user chooses to add a new language, they are prompted to enter a list of letters for that language.
 
-1.**Set your own letters pattern:** Like [z,d,l,k,g,t,e,q,u,o,f,s,p,a,y,h,j,u,b,...etc] to make it more difficult to be broken
+The Caesar cipher algorithm is then applied to the sentence by shifting each letter in the sentence by the specified shift value. The function checks if the letter is in the list of letters for the chosen language, and if so, applies the shift. If the letter is not in the list of letters for the chosen language, it is not shifted and remains the same.
 
-2.**replace letters with symbols:** Like replacing "A" with "@", "C" with "(", "L" with "!", ...etc, so when you enter a word contains the replaced letter (A, C, L, ...etc) the word will contain shifted and un-shifted letters in the same word 😉
+Once the ciphering process is complete, the function returns the ciphered sentence.
 
-
----
-**Notes:**
-
-This is an enhanced version of the HackerRank python practice named "Caesar Cipher" 
+Note: This is an enhanced version of HackerRank challenge.
 
 ** you can see it through the following link:**
 
